@@ -50,6 +50,8 @@ This project demonstrates a complete **CI/CD pipeline** for a simple Flask appli
 ---
 
 ## 📂 Project Structure
+```text 
+```
 flask-test-cicd/
 ├── README.md
 ├── app/ # Flask application code
@@ -70,7 +72,9 @@ flask-test-cicd/
 ├── requirements-dev.txt # Development & test dependencies
 ├── Dockerfile # Docker build instructions
 └── run.py # Entrypoint to run the Flask app
+```
 
+```
 ---
 ## 📝 Author
 👤 Konrad Ptasznik  
