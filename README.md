@@ -66,7 +66,7 @@ flask-test-cicd/
 │ └── ingress.yaml
 ├── .github/
 │ └── workflows/ # GitHub Actions pipelines
-│ ├── ci.yml
+│ ├── cicd.yml
 │ └── cd.yml
 ├── requirements.txt # Python runtime dependencies
 ├── requirements-dev.txt # Development & test dependencies
