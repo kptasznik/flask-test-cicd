@@ -9,5 +9,5 @@ COPY app/ ./app
 
 EXPOSE 5000
 
-CMD ["python", "-m", "app.routes"]
+CMD ["python", "run.py"]
 
