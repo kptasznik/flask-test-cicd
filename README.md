@@ -51,16 +51,25 @@ This project demonstrates a complete **CI/CD pipeline** for a simple Flask appli
 
 ## 📂 Project Structure
 flask-test-cicd/
-├── app/ # Flask application code
-├── tests/ # Unit tests
-├── kubernetes/ # Kubernetes manifests (deployment, service )
-├── requirements.txt # Python dependencies
-├── requirements-dev.txt
-├── Dockerfile
-├── run.py # main function which run app
-├── .github/workflows/ # GitHub Actions pipelines
-└── README.md
----
+├── app/                   # Flask application
+│   ├── __init__.py
+│   └── routes.py
+├── tests/                 # Unit tests
+│   └── test_routes.py
+├── k8s/                   # Kubernetes manifests
+│   ├── namespace.yaml
+│   ├── deployment.yaml
+│   ├── service.yaml
+│   └── ingress.yaml
+├── .github/
+│   └── workflows/         # GitHub Actions pipelines
+│       ├── cicd.yml
+│       └── cd.yml
+├── Dockerfile             # Docker build instructions
+├── requirements.txt       # Runtime dependencies
+├── requirements-dev.txt   # Dev & test dependencies
+├── run.py                 # Entrypoint for Flask
+└── README.md              # Project overview
 ## 📝 Author
 👤 Konrad Ptasznik  
 - GitHub: [@kptasznik](https://github.com/kptasznik)
