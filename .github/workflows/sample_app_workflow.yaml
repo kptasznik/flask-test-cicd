@@ -1,0 +1,27 @@
+name: Flask Sample App CI/CD Workflow
+on:
+  push:
+     branches:
+       - "main"
+       - "feature/*" 
+  pull_request:
+jobs:
+  unit-tests:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install -r requirements-dev.txt
+
+      - name: Run unit tests
+        run: pytest -q tests
+
