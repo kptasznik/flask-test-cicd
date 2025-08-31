@@ -1,6 +1,6 @@
 # 🚀 Flask CI/CD on Kubernetes
 
-This project demonstrates a complete **CI/CD pipeline** for a simple Flask application, using **GitHub Actions, Docker, GitHub Container Registry (GHCR), and Kubernetes (k3s)**.  
+This project demonstrates a complete **CI/CD pipeline** for a simple Flask application, using **GitHub Actions, Docker, GitHub Container Registry (GHCR), and Kubernetes (k3s)**. Based on [ubc/flask-sample-app](https://github.com/ubc/flask-sample-app) application.
 
 ---
 
