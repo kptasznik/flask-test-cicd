@@ -21,7 +21,11 @@ jobs:
       - name: Install dependencies
         run: |
           pip install -r requirements-dev.txt
+      - name: Run tests with report
+        run: pytest --junitxml=report.xml tests
 
-      - name: Run unit tests
-        run: pytest -q tests
-
+      - name: Upload test report
+        uses: actions/upload-artifact@v3
+        with:
+          name: junit-report
+          path: report.xml
