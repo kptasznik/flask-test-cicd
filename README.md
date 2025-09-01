@@ -9,7 +9,7 @@ This project demonstrates a complete **CI/CD pipeline** for a simple Flask appli
 - **CI/CD:** GitHub Actions (self-hosted runner)  
 - **Containerization:** Docker, GitHub Container Registry (GHCR)  
 - **Orchestration:** Kubernetes (k3s)  
-- **Networking:** Traefik 
+- **Networking:** Traefik, Cloudflare DNS
 - **Testing:** pytest, coverage.py  
 
 ---
@@ -20,6 +20,7 @@ This project demonstrates a complete **CI/CD pipeline** for a simple Flask appli
 - ✅ Docker image build & push to **GHCR**  
 - ✅ Automated deployment to **Kubernetes (k3s)**  
 - ✅ Namespaced resources and LoadBalancer service via Traefik  
+- ✅ Accessible under a custom domain via **Cloudflare DNS**
 
 ---
 
@@ -45,7 +46,7 @@ This project demonstrates a complete **CI/CD pipeline** for a simple Flask appli
    - Performs:
    - Builds Docker image and pushes it to **GitHub Container Registry (GHCR)**.
    - Deploys to **k3s** cluster using a self-hosted runner. 
-   - Applies Kubernetes manifests (`deployment`, `service`).
+   - Applies Kubernetes manifests (`deployment`, `service`,`ingress`).
    - Waits for successful deployment rollout and shows the status of services.
 ---
 
